@@ -14,7 +14,6 @@ const GlobalHeaderRight: React.FC = () => {
   if ((navTheme === 'dark' && layout === 'top') || layout === 'mix') {
     className = `${styles.right}  ${styles.dark}`;
   }
-  console.log('fasfsa');
   return (
     <Space className={className}>
       <Avatar menu />
