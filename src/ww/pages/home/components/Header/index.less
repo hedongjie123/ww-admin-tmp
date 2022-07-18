@@ -1,0 +1,34 @@
+@import '~antd/es/style/themes/default.less';
+
+.content {
+  display: flex;
+  flex-direction: row;
+}
+
+.extraContent {
+  display: flex;
+  flex-direction: row;
+
+  .statItem {
+    position: relative;
+    padding: 0 24px;
+
+    &::after {
+      position: absolute;
+      top: 8px;
+      right: 0;
+      width: 1px;
+      height: 40px;
+      background-color: @border-color-split;
+      content: '';
+    }
+
+    &:last-child {
+      padding-right: 0;
+
+      &::after {
+        display: none;
+      }
+    }
+  }
+}
